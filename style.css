@@ -10,6 +10,106 @@ body{
     color:#222;
 }
 
+.top-brand{
+    display: flex;
+    background-image: url("imgs/img1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:10px;
+    justify-content: center;
+    text-align: center;
+    border-bottom:1px solid #f71568;
+    height: 130vh;
+}
+
+.brand-badge{
+    display:inline-block;
+    background:#ff4f8b;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:50px;
+    font-size:.9rem;
+    font-weight:600;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(255,79,139,.25);
+}
+
+.brand-content h1{
+    font-size:3rem;
+    color:#3f2530;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.brand-content h1 span{
+    color:#ff4f8b;
+}
+
+.brand-content p{
+    margin:auto;
+    font-size:1.15rem;
+    color:#6d5160;
+    line-height:1.8;
+}
+
+.brand-highlights{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-top:40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlight{
+    background:#fff;
+    padding:15px 24px;
+    border-radius:14px;
+    font-weight:600;
+    color:#ff4f8b;
+    box-shadow:0 10px 25px rgba(255,105,160,.12);
+    transition:.3s;
+    width: 500px;
+}
+
+.highlight:hover{
+    transform:translateY(-5px);
+    background:#ff4f8b;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    .top-brand{
+        padding:55px 20px;
+    }
+
+    .brand-content h1{
+        font-size:2.1rem;
+    }
+
+    .brand-content p{
+        font-size:1rem;
+    }
+
+    .brand-highlights{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .highlight{
+        width:100%;
+        max-width:320px;
+    }
+
+}
+
+.top-brand h1,
+.top-brand p{
+    color: #ec1b61;
+}
+
 .hero{
     min-height:100vh;
     display:flex;
